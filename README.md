@@ -1,11 +1,21 @@
-# Twitter Sentiment Analysis using PySpark and Naive Bayes
+## Twitter Sentiment Analysis using PySpark and Naive Bayes
 
-## Overview
+### Project Overview
 
-This project performs sentiment analysis on Twitter data using Apache Spark (PySpark) and Machine Learning techniques. The objective is to classify tweets as Positive or Negative by processing large-scale textual data efficiently.
+This project focuses on analyzing sentiments of tweets using Machine Learning techniques. The goal is to classify tweets into different sentiment categories such as Positive, Negative, or Neutral. It demonstrates the use of Natural Language Processing (NLP) and data analysis techniques on real-world Twitter data.
 
-## Technologies Used
+### Objective
+To analyze public opinions expressed on Twitter
+To clean and preprocess text data
+To build a machine learning model for sentiment classification
+To evaluate model performance on real dataset
 
+### Dataset
+Source: Twitter dataset (CSV format)
+Contains tweets and their corresponding sentiment labels
+Features include tweet text and sentiment category
+
+### Technologies Used
 - Python
 - Apache Spark (PySpark)
 - Pandas
@@ -13,18 +23,28 @@ This project performs sentiment analysis on Twitter data using Apache Spark (PyS
 - Machine Learning
 - Natural Language Processing (NLP)
 
-## Workflow
+### Workflow
 
-1. Load Twitter dataset
-2. Data cleaning and preprocessing
-3. Remove neutral sentiments
-4. Label encoding
-5. Feature extraction using HashingTF
-6. Train Naive Bayes classifier
-7. Evaluate model performance
-8. Predict sentiment on unseen tweets
+#### 1.Data Collection
+Loaded Twitter dataset from CSV file
+#### 2.Data Preprocessing
+Removed null values
+Cleaned text (removed hashtags, links, punctuation)
+Converted text into lowercase
+Removed stopwords
+#### 3.Exploratory Data Analysis (EDA)
+Visualized sentiment distribution
+Generated word frequency analysis
+#### 4.Feature Extraction
+TF-IDF / Count Vectorizer used to convert text into numerical form
+#### 5.Model Building
+Applied Machine Learning algorithms such as:
+Naive Bayes
+#### 6.Model Evaluation
+Accuracy Score
+F1 score
 
-## Results
+#### Results
 
 - Accuracy: 85.39%
 - F1 Score: 85.33%
@@ -32,4 +52,5 @@ This project performs sentiment analysis on Twitter data using Apache Spark (PyS
 ## Author
 
 Aiman Sarfraz
+
 BS Data Science
